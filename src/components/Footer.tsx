@@ -160,7 +160,7 @@ export default function Footer() {
       <div className="bg-[#F2EFE9] text-slate-650 border-t border-slate-205 py-8 text-[9.5px] font-mono tracking-wider">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left select-none">
           <div>
-            &copy; {currentYear} Shree Jyoti Enterprises &bull; Direct-to-Port Quarry Sourcing.
+            &copy; {currentYear} Shree Jyoti Enterprises &bull; Developed by Rishika Jain.
           </div>
           <div className="flex items-center gap-3 justify-center flex-wrap">
             <span>EXPORT DISPATCH DEPT</span>
