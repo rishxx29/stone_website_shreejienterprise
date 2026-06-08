@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Premium Stone & Organic Architecture Palette */
+  --color-primary: #855b32;       /* Earthy Stone Bronze */
+  --color-secondary: #b1926d;     /* Polished Sand Gold */
+  --color-accent: #d97706;        /* Warm Sienna Amber */
+  
+  /* Slate & Gray Tones rewritten into Warm Sandstone and Basalt Grey */
+  --color-slate-50: #faf9f5;      /* Ivory Sand Base */
+  --color-slate-100: #f5f2ea;     /* Clay Silt Bed */
+  --color-slate-200: #eadfcf;     /* Light Bedrock */
+  --color-slate-300: #d8ccb9;     /* Soft Calcareous Silt */
+  --color-slate-400: #b2a28c;     /* Weathered Limestone */
+  --color-slate-500: #8d7b66;     /* Dense Micaceous Slate */
+  --color-slate-600: #6b5b49;     /* Deep Shale */
+  --color-slate-700: #4f4232;     /* Core Basalt Ground */
+  --color-slate-800: #2d2721;     /* Charcoal Stone Block */
+  --color-slate-900: #1c1916;     /* Obsidian Jet Base */
+  --color-slate-950: #100e0c;     /* Deep Sieve Void */
+
+  /* Override Tailwind indigo shades with premium sandstone gold and earth bronze.
+     This instantly translates standard indigo utilities to our majestic brand color spectrum. */
+  --color-indigo-50: #faf6f0;
+  --color-indigo-100: #f4ece1;
+  --color-indigo-200: #eaddc8;
+  --color-indigo-300: #dcbfa4;
+  --color-indigo-400: #b5926c;
+  --color-indigo-505: #8d6c4c;
+  --color-indigo-500: #855b32;
+  --color-indigo-c: #855b32;
+  --color-indigo-600: #764f27;
+  --color-indigo-700: #62401e;
+  --color-indigo-800: #4f3216;
+  --color-indigo-900: #3e250e;
+
+  /* Override Tailwind purple/secondary series to earthy sand tones */
+  --color-purple-c: #b1926d;
+  --color-purple-500: #b1926d;
+  --color-purple-600: #937651;
+  
+  /* Override Tailwind cyan shades to warm sunset ochres and copper golds */
+  --color-cyan-c: #d97706;
+  --color-cyan-50: #fef3c7;
+  --color-cyan-100: #fde68a;
+  --color-cyan-200: #fcd34d;
+  --color-cyan-300: #fbbf24;
+  --color-cyan-400: #f59e0b;
+  --color-cyan-500: #d97706;
+  --color-cyan-600: #b45309;
+  --color-cyan-700: #92400e;
+  --color-cyan-800: #78350f;
+  --color-cyan-900: #451a03;
+}
+
+/* Luxury Accent Gradients representing warm core stones and sunset skies */
+.primary-gradient {
+  background: linear-gradient(135deg, #855b32 0%, #b1926d 50%, #d97706 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #855b32 0%, #b1926d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cyan-glow {
+  box-shadow: 0 0 25px -5px rgba(217, 119, 6, 0.4);
+}
+
+.indigo-glow {
+  box-shadow: 0 0 30px -10px rgba(133, 91, 50, 0.5);
+}
+
+/* Ultra-polished modern buttons with transitions */
+.btn-premium {
+  background: white;
+  color: #2d2721;
+  border: 1px solid #eadfcf;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.btn-premium:hover {
+  transform: translateY(-1.5px);
+  background: #faf9f5;
+  border-color: #d8ccb9;
+  box-shadow: 0 8px 20px -6px rgba(45, 39, 33, 0.1);
+}
+
+.btn-premium-indigo {
+  background: linear-gradient(135deg, #855b32 0%, #b1926d 100%);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(133, 91, 50, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-premium-indigo:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 12px 28px -4px rgba(133, 91, 50, 0.45);
+  filter: brightness(1.08);
+}
+
+.btn-premium-indigo:active {
+  transform: translateY(0px);
+}
+
+.btn-premium-dark {
+  background: #1c1916;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-premium-dark:hover {
+  transform: translateY(-1.5px);
+  background: #2d2721;
+  border-color: #b1926d;
+  box-shadow: 0 8px 24px -6px rgba(177, 146, 109, 0.3);
+}
+
+/* Ambient patterns corresponding to structural grid alignments */
+.saas-grid-pattern {
+  background-image: radial-gradient(rgba(133, 91, 50, 0.05) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+}
+
+.saas-grid-pattern-dark {
+  background-image: radial-gradient(rgba(217, 119, 6, 0.04) 1.2px, transparent 1.2px);
+  background-size: 32px 32px;
+}
+
+/* Glassmorphism Cards for Modern dashboards */
+.saas-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.saas-card:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 40px -15px rgba(79, 70, 229, 0.08);
+}
+
+.saas-card-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 50px -15px rgba(2, 6, 23, 0.5);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.saas-card-dark:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+  box-shadow: 0 25px 45px -10px rgba(6, 182, 212, 0.15);
+}
+
+/* Global scrollbar and accessibility setups */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-700);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-slate-950);
+}
+
+/* Custom scrollbar optimized for SaaS interfaces */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-slate-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
