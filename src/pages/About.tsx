@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 import { 
   Building2, 
   Layers, 
@@ -17,6 +18,12 @@ import { TIMELINE_DATA } from "../types";
 import { Link } from "react-router-dom";
 
 export default function About() {
+  useSEO({
+    title: "About Us | Legacy in Indian Stone & Sandstone",
+    description: "Learn about Shree Jyoti Enterprises. Mined and processed in Kota, Rajasthan, we supply export-grade natural stones to global projects since 2007.",
+    path: "/about"
+  });
+
   return (
     <div id="about-page" className="bg-slate-50 text-slate-800 min-h-screen pt-36 pb-24 selection:bg-accent selection:text-slate-950">
       <div className="absolute inset-0 saas-grid-pattern opacity-30 pointer-events-none z-0"></div>

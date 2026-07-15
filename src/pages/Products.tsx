@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { motion } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 import { 
   CheckCircle2, 
   Layers, 
@@ -21,6 +22,12 @@ import {
 import { PRODUCTS_DATA, Product } from "../types";
 
 export default function Products() {
+  useSEO({
+    title: "Premium Sandstone Products | B2B Global Export",
+    description: "Browse our export product range of Indian Sandstone: Kandla Grey, Autumn Brown, Raj Green, Rippon Buff, Indian York paving slabs, and circle kits.",
+    path: "/products"
+  });
+
   const [searchParams] = useSearchParams();
   const [activeFilter, setActiveFilter] = useState<string>("all");
   const [selectedImages, setSelectedImages] = useState<{ [productId: string]: string }>({});

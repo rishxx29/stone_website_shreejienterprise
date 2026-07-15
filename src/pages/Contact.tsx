@@ -1,6 +1,7 @@
 import { useState, useEffect, FormEvent } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 import { 
   Phone, 
   Mail, 
@@ -15,6 +16,12 @@ import {
 import { PRODUCTS_DATA } from "../types";
 
 export default function Contact() {
+  useSEO({
+    title: "Contact Us | B2B Natural Stone Freight Quote",
+    description: "Get a B2B export price quotation or sample kit for Indian natural sandstone paving slabs. Reach our office in Kota, Rajasthan, India.",
+    path: "/contact"
+  });
+
   const [searchParams] = useSearchParams();
   const requestedSubject = searchParams.get("subject") || "";
 

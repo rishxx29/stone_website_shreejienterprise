@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 import { 
   Award, 
   Package, 
@@ -26,12 +27,12 @@ import {
 import Logo from "../components/Logo";
 
 // Local image assets references
-const containerLoad1 = "/src/assets/images/container_load_1_1780911726514.png";
-const containerOpenExt = "/src/assets/images/container_open_ext_1780911744496.png";
-const containerLoad2 = "/src/assets/images/container_load_2_1780911760568.png";
-const luxuryVillaInterior = "/src/assets/images/luxury_villa_interior_1780912810343.png";
-const premiumStoneStack = "/src/assets/images/premium_stone_stack_1780912826313.png";
-const luxuryResortCourtyard = "/src/assets/images/luxury_resort_courtyard_1780912841518.png";
+const containerLoad1 = "/assets/container_load_1_1780911726514.png";
+const containerOpenExt = "/assets/container_open_ext_1780911744496.png";
+const containerLoad2 = "/assets/container_load_2_1780911760568.png";
+const luxuryVillaInterior = "/assets/luxury_villa_interior_1780912810343.png";
+const premiumStoneStack = "/assets/premium_stone_stack_1780912826313.png";
+const luxuryResortCourtyard = "/assets/luxury_resort_courtyard_1780912841518.png";
 
 const PREMIUM_STONES = [
   {
@@ -157,6 +158,12 @@ const PORTFOLIO_ITEMS = [
 ];
 
 export default function Home() {
+  useSEO({
+    title: "Premium Natural Stone Exporter",
+    description: "Welcome to Shree Jyoti Enterprises. We export premium Indian sandstone including Kandla Grey, Autumn Brown, Raj Green, Rippon Buff, and Indian York. Sourced directly from Kota, Rajasthan.",
+    path: "/"
+  });
+
   const [stoneClass, setStoneClass] = useState("kandla-grey");
   const [thickness, setThickness] = useState("20mm");
   const [targetPort, setTargetPort] = useState("");

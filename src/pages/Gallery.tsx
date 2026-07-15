@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 import { 
   X, 
   ChevronLeft, 
@@ -21,6 +22,12 @@ const CATEGORY_TABS: { label: string; value: GalleryCategory }[] = [
 ];
 
 export default function Gallery() {
+  useSEO({
+    title: "Sandstone Gallery | Live Production & Shipping Slabs",
+    description: "Browse high-resolution photographs of our natural sandstone paving cleft finishes, IPPC seaworthy export crates, container cargo lashing, and finished landscaping installations.",
+    path: "/gallery"
+  });
+
   const [selectedCategory, setSelectedCategory] = useState<GalleryCategory>("all");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 

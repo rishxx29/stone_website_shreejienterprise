@@ -189,17 +189,17 @@ export default function Logo({
           </div>
 
           {/* Decorative separator */}
-          <div className="flex items-center gap-[5px] my-[4px]">
+          <div className="flex items-center gap-1.25 my-1">
             <div
-              className="h-[1.5px] flex-1 max-w-[28px] rounded-full"
+              className="h-[1.5px] flex-1 max-w-7 rounded-full"
               style={{ background: "linear-gradient(90deg, #d97706, #b1926d)" }}
             />
             <div
-              className="w-[5px] h-[5px] rotate-45"
+              className="w-1.25 h-1.25 rotate-45"
               style={{ background: "#d97706" }}
             />
             <div
-              className="h-[1.5px] flex-1 max-w-[28px] rounded-full"
+              className="h-[1.5px] flex-1 max-w-7 rounded-full"
               style={{ background: "linear-gradient(90deg, #b1926d, #d97706)" }}
             />
           </div>
@@ -215,7 +215,7 @@ export default function Logo({
 
           {/* Tagline */}
           <span
-            className={`font-mono text-[6.5px] tracking-[0.18em] uppercase leading-none mt-[4px] ${
+            className={`font-mono text-[6.5px] tracking-[0.18em] uppercase leading-none mt-1 ${
               isFooter ? "text-slate-500" : "text-slate-400"
             }`}
           >
