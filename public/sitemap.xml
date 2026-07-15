@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://shreejyotienterprises.com/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Products Page -->
+  <url>
+    <loc>https://shreejyotienterprises.com/products</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://shreejyotienterprises.com/about</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://shreejyotienterprises.com/gallery</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://shreejyotienterprises.com/contact</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+</urlset>
