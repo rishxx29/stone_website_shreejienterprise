@@ -10,7 +10,7 @@ interface SEOProps {
 }
 
 const BASE_URL = "https://shreejyotienterprises.com";
-const DEFAULT_IMAGE = `${BASE_URL}/assets/luxury_villa_interior_1780912810343.png`;
+const DEFAULT_IMAGE = `${BASE_URL}/logo.jpeg`;
 const SITE_NAME = "Shree Jyoti Enterprises";
 
 /**
